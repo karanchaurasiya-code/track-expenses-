@@ -1,0 +1,91 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.big-box{
+  background:url(bg.jpg)no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background-size: cover; 
+}
+.big-box h1{
+  text-align: center;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 45px;
+  background: rgba(255, 255, 255, 0.1); /* Transparent white background */
+  backdrop-filter: blur(5px);           /* Blurs background behind it */
+  -webkit-backdrop-filter: blur(5px); 
+}
+h2{
+  text-align: center;
+  font-size: 30px;
+  margin: 10px;
+}
+.container {
+  max-width: 1000px;
+  margin: 80px auto; /* centers horizontally */
+  height: 70vh;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.15); /* semi-transparent background */
+  backdrop-filter: blur(10px); /* glass effect */
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+.input-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+}
+.input-section label{
+  font-weight: bold;
+  margin-right: 10px;
+}
+.input-section input[type="number"], .input-section input[type="date"]{
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+}
+.input-section button{
+  padding: 5px 10px;
+  background-color: rgb(238, 9, 9);
+  color:white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.expenses-list{
+  margin: 20px;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+th,td{
+  border: 2px solid black;
+  padding: 8px;
+  text-align: left;
+
+}
+th{
+  background-color:black;
+  color: whitesmoke;
+}
+tfoot td{
+  font-weight: bold;
+}
+.delete-btn{
+  padding: 5px 10px;
+  background-color: rgb(238, 9, 9);
+  color:white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
