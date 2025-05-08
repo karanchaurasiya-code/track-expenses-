@@ -89,3 +89,49 @@ tfoot td{
   border-radius: 4px;
   cursor: pointer;
 }
+/* add some new css */
+@media (max-width: 768px) {
+  .input-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .input-section label,
+  .input-section input,
+  .input-section select,
+  .input-section button {
+    width: 100%;
+  }
+
+  .container {
+    height: auto;
+    margin: 30px 10px;
+    padding: 15px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  th, td {
+    padding: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .big-box h1 {
+    font-size: 28px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+}
+.expenses-list {
+  overflow-x: auto;
+}
