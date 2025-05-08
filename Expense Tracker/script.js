@@ -13,7 +13,7 @@ function updateLocalStorage() {
 }
 
 function renderExpenses() {
-  expenseTableBody.innerHTML = ""; 
+  expenseTableBody.innerHTML = ""; // Clear table
   totalAmount = 0;
 
   expenses.forEach((expense, index) => {
@@ -46,7 +46,7 @@ function renderExpenses() {
   totalAmountCell.textContent = totalAmount;
 }
 
-
+// Handle Add
 addBtn.addEventListener("click", () => {
   const category = categorySelect.value;
   const amount = Number(amountInput.value);
@@ -61,11 +61,11 @@ addBtn.addEventListener("click", () => {
   updateLocalStorage();
   renderExpenses();
 
- 
+  // ✅ Clear inputs
   amountInput.value = "";
   dateInput.value = "";
   categorySelect.selectedIndex = 0;
 });
 
-
+// 🔁 On page load
 renderExpenses();
